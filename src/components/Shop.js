@@ -31,6 +31,7 @@ function Shop() {
         <form onSubmit={handleSubmit}>
           <div>
             <label>Name</label>
+            <br></br>
             <input
               type="text"
               name="name"
@@ -40,6 +41,7 @@ function Shop() {
           </div>
           <div>
             <label>Description</label>
+            <br></br>
             <input
               type="text"
               name="description"

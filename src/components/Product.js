@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 
+import './style.css';
 
 function Product() {
   const [formData, setFormData] = useState({
@@ -67,11 +68,12 @@ function Product() {
   };
 
     return (
-      <div>
+      <div className='product'>
         <h3>New Product</h3>
         <form onSubmit={handleSubmit}>
           <div>
             <label>Name</label>
+            <br></br>
             <input
               type="text"
               name="name"
@@ -81,6 +83,7 @@ function Product() {
           </div>
           <div>
             <label>Description</label>
+            <br></br>
             <input
               type="text"
               name="description"
@@ -90,6 +93,7 @@ function Product() {
           </div>
           <div>
             <label>Category</label>
+            <br></br>
             <input
               type="text"
               name="category"
@@ -99,6 +103,7 @@ function Product() {
           </div>
           <div>
             <label>Quantity</label>
+            <br></br>
             <input
               type="number"
               name="quantity"
@@ -109,6 +114,7 @@ function Product() {
           </div>
           <div>
             <label>Price</label>
+            <br></br>
             <input
               type="float"
               name="price"
